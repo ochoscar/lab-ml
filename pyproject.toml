@@ -5,6 +5,10 @@ description = "Machie Learning"
 authors = ["Oscar Andres Ochoa Villegas <ochoscar@gmail.com>"]
 readme = "README.md"
 
+packages = [
+    { include = "lab_ml", from = "src" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.12"
 torch = "^2.7.1"
@@ -16,7 +20,16 @@ pytesseract = "^0.3.13"
 pdf2image = "^1.17.0"
 pillow = "^11.3.0"
 
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.16.1,<0.17.0)",
+    "pytest (>=9.1.1,<10.0.0)"
+]
