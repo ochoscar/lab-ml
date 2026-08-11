@@ -85,7 +85,7 @@ poetry install
 Run the project:
 
 ```bash
-poetry run python src/main.py
+poetry run python src/lab_ml/main.py
 ```
 
 Run tests:
