@@ -125,3 +125,62 @@ Every experiment is an opportunity to:
 ## License
 
 This project is licensed under the MIT License.
+
+## Learning path
+
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* SciPy
+* Scikit-learn
+* XGBoost
+* PyTorch
+* Hugging Face Transformers
+
+              NUMPY
+                │
+                ▼
+             PANDAS
+                │
+                ▼
+           DATA CLEANING
+                │
+                ▼
+       EDA ← MATPLOTLIB
+        ↑
+      SEABORN
+                │
+                ▼
+       FEATURE ENGINEERING
+                │
+                ▼
+          SCIKIT-LEARN
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+   SUPERVISED       UNSUPERVISED
+        │                │
+   Regression        Clustering
+   Classification    PCA
+        │
+        ▼
+   Cross Validation
+        │
+        ▼
+ Hyperparameter Tuning
+        │
+        ▼
+     Evaluation
+        │
+        ▼
+     XGBoost
+        │
+        ▼
+   Deep Learning
+        │
+        ▼
+     PyTorch
+        │
+        ▼
+ Transformers / LLMs
