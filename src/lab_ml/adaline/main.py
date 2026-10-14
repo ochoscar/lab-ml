@@ -7,7 +7,7 @@ from adaline import Adaline
 from adaline_sgd import AdalineSGD
 
 # How to run: 
-# python3 src\lab_ml\perceptron\main.py
+# python3 src\lab_ml\adaline\main.py
 
 def read_data():
     s = "E:\\datasets\\ml\\iris\\iris.data"
