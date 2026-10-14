@@ -95,18 +95,18 @@ def plot_errors(ada):
     plt.show()
 
 if __name__ == "__main__":
-    print("Running perceptron")
+    print("Running Adaline")
     df = read_data()
     y = select_setosa_versicolor(df)
     X = extract_sepal_petals(df)
-    #compare_trainings_without_standarization(X, y)
+    compare_trainings_without_standarization(X, y)
 
     X_std = standarize(X)
     
-    #ada = Adaline(n_iter=20, eta=0.5)
-    #training(X_std, y, ada)
-    #plot_decision_regions(X_std, y, classifier=ada)
-    #plot_errors(ada)
+    ada = Adaline(n_iter=20, eta=0.5)
+    training(X_std, y, ada)
+    plot_decision_regions(X_std, y, classifier=ada)
+    plot_errors(ada)
 
     ada_sgd = AdalineSGD(n_iter=20, eta=0.01, random_state=1)
     training(X_std, y, ada_sgd)
