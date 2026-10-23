@@ -8,7 +8,8 @@ from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
 
 # How to run: 
-# python3 src\lab_ml\svm\svm_scikitlearn.py
+# win python3 src\lab_ml\svm\svm_scikitlearn.py
+# mac python3 src/lab_ml/svm/svm_scikitlearn.py
 
 def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     markers = ('o', 's', '^', 'v', '<')
